@@ -26,7 +26,7 @@
           "height": {
             "label": "Image Height",
             "description": "Image Height",
-            "editable": "text",
+            "editable": "number",
             "listener": true
           }
         }
@@ -56,7 +56,7 @@
         this.img.setAttribute('src', val);
       },
       heightChanged: function( oldValue, newValue ) {
-        this.img.style.height = ( newValue || "160" ) + "px";
+        this.img.style.height = ( newValue || newValue === 0 ? newValue : "160" ) + "px";
       }
     });
   </script>
