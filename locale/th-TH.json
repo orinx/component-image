@@ -1,5 +1,5 @@
 {
-	"ceci-image": "รูป",
-	"ceci-image/attributes/height/label": "ความสูงของรูป",
-	"ceci-image/attributes/height/description": "ความสูงของรูป"
+    "ceci-image": "รูปภาพ",
+    "ceci-image/attributes/height/label": "ความสูงของรูปภาพ",
+    "ceci-image/attributes/height/description": "ความสูงของรูปภาพ"
 }
