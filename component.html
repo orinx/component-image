@@ -1,4 +1,4 @@
-<polymer-element name="ceci-image" attributes="height" extends="ceci-element"
+<polymer-element name="ceci-image" attributes="height source" extends="ceci-element"
   height="160">
   <template>
     <link rel="stylesheet" href="component.css"></link>
@@ -29,6 +29,11 @@
             "description": "Image Height",
             "editable": "number",
             "listener": true
+          },
+          "source": {
+            "label": "Image Source",
+            "description": "The Image to Show",
+            "editable": "text"
           }
         }
       }
