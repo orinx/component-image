@@ -58,6 +58,9 @@
           that.broadcast("click", this.img.getAttribute( "src" ));
         };
       },
+      onSourceChange : function(){
+        this.setImage(this.source);
+      },
       setImageSource : function (val) {
         this.img.setAttribute('src', val);
       },
