@@ -57,6 +57,7 @@
         this.onclick = function () {
           that.broadcast("click", this.img.getAttribute( "src" ));
         };
+        this.super();
       },
       sourceChanged : function(oldValue,newValue){
         console.log(oldValue,newValue);
