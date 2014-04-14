@@ -2,8 +2,7 @@
   height="160">
   <template>
     <link rel="stylesheet" href="component.css"></link>
-    <img id="image" src=""></img>
-    <shadow></shadow>
+    <img id="image" /><shadow></shadow>
     <script type="text/json" id="ceci-definition">
       {
         "tags": ["component-image", "view", "image"],
@@ -59,6 +58,9 @@
           that.broadcast("click", this.img.getAttribute( "src" ));
         };
         this.super();
+      },
+      setValue : function(v) {
+        this.setImageSource(v);
       },
       sourceChanged : function(oldValue,newValue){
         console.log(oldValue,newValue);
