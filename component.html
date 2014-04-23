@@ -3,42 +3,42 @@
   <template>
     <link rel="stylesheet" href="component.css"></link>
     <img id="image" /><shadow></shadow>
-    <script type="text/json" id="ceci-definition">
-      {
-        "tags": ["component-image", "view", "image"],
-        "thumbnail": "./thumbnail.png",
-        "name": "Image",
-        "description": "Shows a simple image.",
-        "broadcasts": {
-          "click": {
-            "label": "Click",
-            "description": "Occurs when the image is clicked.",
-            "default": false
-          }
+  </template>
+  <ceci-definition>
+    {
+      "tags": ["component-image", "view", "image"],
+      "thumbnail": "./thumbnail.png",
+      "name": "Image",
+      "description": "Shows a simple image.",
+      "broadcasts": {
+        "click": {
+          "label": "Click",
+          "description": "Occurs when the image is clicked.",
+          "default": false
+        }
+      },
+      "listeners": {
+        "setImageSource": {
+          "description": "changes the image tags src attribute.",
+          "label": "Set Image Source",
+          "default": true
+        }
+      },
+      "attributes": {
+        "height": {
+          "label": "Image Height",
+          "description": "Image Height",
+          "editable": "number",
+          "listener": true
         },
-        "listeners": {
-          "setImageSource": {
-            "description": "changes the image tags src attribute.",
-            "label": "Set Image Source",
-            "default": true
-          }
-        },
-        "attributes": {
-          "height": {
-            "label": "Image Height",
-            "description": "Image Height",
-            "editable": "number",
-            "listener": true
-          },
-          "source": {
-            "label": "Image Source",
-            "description": "The Image to Show",
-            "editable": "text"
-          }
+        "source": {
+          "label": "Image Source",
+          "description": "The Image to Show",
+          "editable": "text"
         }
       }
-    </script>
-  </template>
+    }
+  </ceci-definition>
   <script>
     Polymer('ceci-image', {
       ready: function () {
