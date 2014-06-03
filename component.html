@@ -66,6 +66,7 @@
         this.setImageSource(this.source);
       },
       setImageSource : function (val) {
+        this.source = val;
         this.img.setAttribute('src', val);
       },
       heightChanged: function( oldValue, newValue ) {
