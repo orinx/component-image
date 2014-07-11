@@ -1,4 +1,4 @@
-<polymer-element name="ceci-image" source="http://www.placekitten.com/150/150" attributes="height source" extends="ceci-element"
+<polymer-element name="ceci-image" source="//www.placekitten.com/150/150" attributes="height source" extends="ceci-element"
   height="160">
   <template>
     <link rel="stylesheet" href="component.css"></link>
@@ -57,12 +57,11 @@
         this.onclick = function () {
           that.broadcast("click", this.img.getAttribute( "src" ));
         };
-        this.super();
       },
       setValue : function(v) {
         this.setImageSource(v);
       },
-      sourceChanged : function(oldValue,newValue){
+      sourceChanged : function(oldValue, newValue){
         this.setImageSource(this.source);
       },
       setImageSource : function (val) {
