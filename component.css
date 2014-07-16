@@ -13,5 +13,5 @@
 :host .image-container {
   overflow: hidden;
   width: 100%;
+  line-height: 0px;
 }
-
