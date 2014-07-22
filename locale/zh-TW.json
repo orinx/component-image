@@ -1,0 +1,8 @@
+{
+	"ceci-image": "圖片",
+	"ceci-image/description": "透過普通的網址或 data-uri 來顯示圖片",
+	"ceci-image/attributes/height/label": "圖片高度",
+	"ceci-image/attributes/height/description": "圖片高度",
+	"ceci-image/attributes/source/label": "圖片來源",
+	"ceci-image/attributes/source/description": "要顯示的圖片"
+}
